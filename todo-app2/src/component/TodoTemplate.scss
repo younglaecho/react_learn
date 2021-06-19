@@ -1,0 +1,18 @@
+.TodoTemplate {
+  width: 512px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  border-radius: 10px;
+  overflow: hidden;
+  .header {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    background-color: lightblue;
+    font-size: 1.5rem;
+    color: white;
+  }
+}
+

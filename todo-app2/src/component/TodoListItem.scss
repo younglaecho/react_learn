@@ -1,0 +1,32 @@
+.TodoListItem {
+  display: flex;
+  background-color: white;
+  font-size: 1.2rem;
+  display: flex;
+  .checkbox {
+    padding: 1rem;
+    cursor: pointer;
+    display: flex;
+    flex: 1;
+
+    &.checked {
+      text-decoration: line-through;
+      color: lightblue;
+    }
+    .text {
+      margin-left: 0.3rem;
+      flex: 1;
+    }
+    
+  }
+  .remove {
+    padding: 1rem;
+    cursor: pointer;
+  }
+  &:nth-child(even) {
+    background-color: rgb(235, 235, 235);
+  }
+  & + & {
+    border-top: 1px solid lightgray;
+  }
+}

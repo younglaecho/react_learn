@@ -17,7 +17,7 @@ const media = Object.keys(sizes).reduce((acc, label) => {
   return acc;
 }, {})
 
-// console.log(Object.keys(sizes))
+// console.log(Object.keys(sizes)) 
 const Box = styled.div`
   background: ${props => props.color || 'blue'};
   padding: 1rem;

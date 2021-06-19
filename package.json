@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "classname": "^0.0.0",
+    "node-sass": "5.0.0",
+    "react-icons": "^4.2.0"
+  }
+}
