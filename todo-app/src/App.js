@@ -1,4 +1,5 @@
 import React, {useRef, useState, useCallback, } from 'react';
+import produce from 'immer';
 import TodoInsert from './components/TodoInsert';
 import TodoList from './components/TodoList';
 import TodoTemplate from './components/TodoTemplate';
@@ -39,11 +40,15 @@ const App = () => {
   
   const onToggle = useCallback(
     id => {
-      setTodos(todos => todos.map(todo => (
-        todo.id === id ? {...todo, checked: !todo.checked} : todo
-      )))
+      // setTodos(todos => todos.map(todo => (
+      //   todo.id === id ? {...todo, checked: !todo.checked} : todo
+      // )))
+      setTodos(produce(todos, draft => {
+        const todo = draft.find(t => t.id === id);
+        todo.checked = !todo.checked
+      }))
     },
-    []
+    [todos]
   )
 
   return (
