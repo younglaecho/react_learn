@@ -1,6 +1,7 @@
 import React, { Component, useState } from "react";
 
 const EventPractice = () => {
+  
   const [form, setForm] = useState({
     username: "",
     message: "",
@@ -19,6 +20,7 @@ const EventPractice = () => {
       username: "",
       message: "",
     });
+    this.input.focus()
   };
   const onKeyPress = (e) => {
     if (e.key === "Enter") {

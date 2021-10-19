@@ -6,7 +6,7 @@ import Say from "./Say";
 import EventPractice from "./EventPractice";
 import ValidationSample from "./ValidationSample";
 import ScrollBox from "./ScrollBox";
-import IterationSample from "./IterationSample";
+import IterationSample1 from "./IterationSample1";
 
 class App extends Component {
   render() {
@@ -24,7 +24,7 @@ class App extends Component {
           맨 아래로
         </button>
         <br />
-        <IterationSample />
+        <IterationSample1 />
       </div>
     );
   }
