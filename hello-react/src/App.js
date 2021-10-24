@@ -5,7 +5,7 @@ import Counter from "./Counter";
 import Say from "./Say";
 import EventPractice from "./EventPractice";
 import ValidationSample from "./ValidationSample";
-import ScrollBox from "./ScrollBox";
+import ScrollBox from "./ScrollBox1";
 import IterationSample1 from "./IterationSample1";
 
 class App extends Component {
@@ -19,9 +19,9 @@ class App extends Component {
         <Say />
         <EventPractice />
         <ValidationSample />
-        <ScrollBox ref={(ref) => (this.scrollBox = ref)} />
+        <ScrollBox ref={(ref) => this.scrollBox=ref}></ScrollBox>
         <button onClick={() => this.scrollBox.scrollToBottom()}>
-          맨 아래로
+          맨 밑으로
         </button>
         <br />
         <IterationSample1 />

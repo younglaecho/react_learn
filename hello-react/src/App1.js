@@ -9,23 +9,20 @@ function getRandomColor() {
 
 class App1 extends Component {
   state = {
-    color: "#000000",
-  };
-
-  handleclick = () => {
+    color:'#000000'
+  }
+  handleClick = () => {
     this.setState({
-      color: getRandomColor(),
-    });
-  };
+      color: getRandomColor()
+    })
+  }
   render() {
     return (
       <div>
-        <button onClick={this.handleclick}>랜덤 색상</button>
-        <ErrorBoundary>
-          <LifeCycleSample color={this.state.color} />
-        </ErrorBoundary>
+        <button onClick={this.handleClick}>랜던 색상</button>
+        <LifeCycleSample color={this.state.color}></LifeCycleSample>
       </div>
-    );
+    )
   }
 }
 
