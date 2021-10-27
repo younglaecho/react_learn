@@ -17,7 +17,7 @@ const media = Object.keys(sizes).reduce((acc, label) => {
   return acc;
 }, {})
 
-// console.log(Object.keys(sizes)) 
+console.log(media.desktop) 
 const Box = styled.div`
   background: ${props => props.color || 'blue'};
   padding: 1rem;
@@ -66,7 +66,8 @@ const Button = styled.button`
 
 
 function tagged(...args) {
-  return args[0][0] + args[1]['foo'] + args[0][1] + args[2] + args[0][2]
+  console.log(args)
+  return args[0][0] + args[1]['foo'] + args[0][1] + args[2]() + args[0][2]
 }
 
 const taggedString = tagged`hello ${{ foo: 'bar' }} ${() => 'world'}! ${1234}`;
