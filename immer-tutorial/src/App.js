@@ -43,7 +43,7 @@ const App = () => {
 
   const onRemove = useCallback(id => {
     setData(produce(data, draft=>{
-      draft.array[id-1].name='TLqkf';
+      draft.array.splice(draft.array.findIndex(info=> info.id ===id),1);
     }))
   }, [data]) 
   return (
