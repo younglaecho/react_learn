@@ -5,7 +5,8 @@ const About = ({location}) => {
   const query = qs.parse(location.search, {
     ignoreQueryPrefix: true
   })
-
+  console.log(location)
+  console.log(query)
   const showDetail = query.detail ==='true';
 
   return (
