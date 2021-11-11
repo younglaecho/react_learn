@@ -1,10 +1,13 @@
 import ColorBox from "./components/ColorBox";
+import { ColorProvider } from './contexts/color'
 
 function App() {
   return (
-    <div >
-      <ColorBox></ColorBox>
-    </div>
+    <ColorProvider>
+      <div >
+        <ColorBox></ColorBox>
+      </div>
+    </ColorProvider>
   );
 }
 
